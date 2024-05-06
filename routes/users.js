@@ -11,9 +11,9 @@ const plm = require("passport-local-mongoose");
 
 // mongoose.connect(`mongodb+srv://findmyroomie33:${password}@cluster01101.6hgzj0d.mongodb.net/?retryWrites=true&w=majority&appName=Cluster01101`);
 
-mongoose.connect("mongodb://127.0.0.1:27017/FMRDB");
+//mongoose.connect("mongodb://127.0.0.1:27017/FMRDB");
 
-// mongoose.connect("mongodb://u8ib0kpf6kbmslemuozt:xv9vQevh4ccaIM5CiWD@b3ljl2hp3qlh7ae5tfhz-mongodb.services.clever-cloud.com:2796/b3ljl2hp3qlh7ae5tfhz");
+mongoose.connect("mongodb://u8ib0kpf6kbmslemuozt:xv9vQevh4ccaIM5CiWD@b3ljl2hp3qlh7ae5tfhz-mongodb.services.clever-cloud.com:2796/b3ljl2hp3qlh7ae5tfhz");
 
 
 // const { MongoClient, ServerApiVersion } = require('mongodb');
