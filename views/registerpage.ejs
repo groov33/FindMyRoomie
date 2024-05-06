@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="icon" href="../images/favicon.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>regisster page</title>
+    <!-- <link rel="stylesheet" href="res.css"> -->
+    <style>
+        body{
+    margin: 0;
+    margin-bottom: 20px;
+}
+.main{
+    /* display: grid;
+    grid-template-rows: 1fr 1fr 1fr; */
+    margin: 0px;
+    padding: 0px;
+}
+.nav{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-gap: 800px;
+    background-color: white;
+    height: 100px;
+    border-radius: 5px;
+    transition: background-color 1s;
+    margin-right: 0%;
+}
+.buttons{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 25px;
+    width: 200px;
+    grid-gap: 10px;
+}
+.fillthecheck{
+    margin-left: 80px;
+    width: 20px;
+}
+.kannada{
+    margin-left: 72px;
+}
+.options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 50px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif;
+    text-decoration: none; 
+    transition: text-decoration 1s ease;
+}
+.options:hover{
+    cursor: pointer;
+    text-decoration: underline; 
+     
+}
+.logo{
+    display: grid;
+    padding: 25px;
+    grid-template-columns: 1fr 1fr;
+    height: 100px;
+    justify-content: center;
+    /* background-color: #bfafc4; */
+
+}
+.otherlink{
+    color: black;
+    text-decoration: none;
+}
+.logp{
+    display: flex;
+    width: 200px;
+    margin-left: 50px;
+    margin-top: -15px;
+    border-radius: 50px;
+}
+.titlee{
+    padding: 5px;
+    font-size: xx-large;
+    color: red;
+    font-weight: bold;
+}
+.nav{
+    position: sticky;
+    top: 0;
+}
+.loginbutton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 50px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif;
+    background-color: #ffe26f;
+    border-radius: 4px;
+    color: black;
+    border: 1px solid black ;
+}
+.loginbutton:hover{
+    cursor: pointer;
+}
+.loglink{
+    color: black;
+    text-decoration: none;
+}
+.homebutton{
+    color: black;
+    text-decoration: none;
+}
+.midbigbox{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 180px;
+    margin-right: 360px;
+    /* margin-top: -90px; */
+    
+    grid-gap: 10px;
+}
+.sidebutton{
+    color: black;
+    text-decoration: none;
+}
+.smallboxone{
+    display: grid;
+    grid-row: 1fr 1fr 1fr 1fr 1fr;
+    width: 260px;
+    height: 310px;
+    border: 2px solid rgb(232, 223, 223);
+    box-shadow: 5px 5px rgb(232, 223, 223);
+    border-radius: 15px;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 4px;
+    justify-content: center;
+}
+.bullets{
+    display: flex;
+    background-color: #D4BBDD;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    width: 190px;
+    border-radius: 50px;
+}
+.bullets:hover{
+    cursor: pointer;
+    background-color: #e4d0eb;
+}
+.smallboxtwo{
+    display: grid;
+    grid-template-rows: 1fr fr;
+    width: 600px;
+    height: fit-content;
+    border-radius: 15px;
+    border: 2px solid rgb(232, 223, 223);
+    box-shadow: 5px 5px rgb(232, 223, 223);
+}
+.uandp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif;
+    font-weight: 500;
+    font-size: 1.25rem;
+    color: rgb(75 85 99);
+    margin-top: 30px;
+}
+.feilds{
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif;
+    color: rgb(75 85 99);
+    font-size: 20px;
+    font-weight: 480;
+    margin-left: 80px;
+}
+.uppertext{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif;
+    font-weight: 500;
+    /* margin-top: -300px; */
+    margin: 10px;
+    margin-bottom: 20px;
+    height: fit-content;
+    color: rgb(75 85 99);
+}
+.uppertexttwo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: medium;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif;
+    font-weight: 500;
+    /* margin-top: -300px; */
+    margin: 10px;
+    margin-bottom: 20px;
+    height: fit-content;
+    color: rgb(75 85 99);
+}
+.uppertexttwo-class{
+    visibility: visible;
+}
+.fillthebox{
+    width: 230px;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid #bfafc4;
+    margin-left: 80px;
+    padding-left: 6px;
+}
+.fillthebox:hover{
+    border: 1px solid rgb(59, 59, 225);
+}
+.nextbutton{
+    margin: 25px;
+    width: 130px;
+    height: 35px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    background-color: rgb(75, 210, 75);
+    border: 1px solid #bfafc4;
+    border-radius: 5px;
+    margin-left: 230px;
+}
+.nextbutton:hover{
+    cursor: pointer;
+    background-color: rgb(104, 223, 104);
+}
+.butt{
+    color: white;
+    text-decoration: none;
+}
+.texttext{
+    display: flex;
+    justify-content: center;
+}
+#textarea{ margin-left: 15.5%;
+    width: 400px;
+}
+/* .hrcopy{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 0px;
+    height: ;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+} */
+    </style>
+</head>
+<body>
+    <div class="main">
+    <div class="nav">
+        <div class="logo">
+            <div>
+          <a href="/register-home"> <img src="../images/new logo.png" alt="" class="logp"></a>
+        </div>
+        <!-- <div class="titlee">
+            FINDMYROMMIE
+        </div> -->
+        </div>
+        <div class="buttons">
+            <div class="options" id="homescroll">
+                <a class="homebutton" href="/register-home">HOME</a></div>
+           <a class="loglink" href="/register-home"> <div class="options" id="aboutscroll">
+                ABOUT US
+            </div></a>
+            <a class="loglink" href="/register-home">  <div class="loginbutton">
+              LOGOUT
+            </div></a>
+        </div>
+    </div>
+    <div class="uppertext">
+        Registration Form
+    </div>
+    <div class="uppertexttwo"> *Complete The Registration To LOGOUT* </div>
+    <div class="midbigbox">
+        <div class="smallboxone">
+            <div class="bullets">
+               <a class="sidebutton" href="registerpage.html"> Personal Details </a>
+            </div>
+            <div class="bullets">
+               <a class="sidebutton" href="registerpage2.html"> Basic Information </a>
+            </div>
+            <div class="bullets">
+                <a class="sidebutton" href="registerpage3.html">Questionnaire</a>
+            </div>
+            <!-- <div class="bullets">
+                <a class="sidebutton" href="registerpage4.html">What You Want?</a>
+            </div> -->
+            <div class="bullets">
+              <a class="sidebutton" href="registerpage5.html">  Text Area </a>
+            </div>
+        </div>
+        <div class="smallboxtwo">
+            <div class="uandp">
+                Personal Details
+            </div>
+            <form class="firstpage" action="/submitform1" method="post">
+                <p class="feilds">Name*</p>
+                <input required name="name" class="fillthebox" type="text" placeholder="Enter Name">
+                <p class="feilds"> Email ID* </p>
+                <input required name="email" class="fillthebox" type="email" placeholder="Enter Email Address">
+                <p class="feilds">Mobile No.*</p>
+                <input required name="mobileNumber" class="fillthebox" type="number" placeholder="Enter Mobile No.">
+                <br>
+                <p class="feilds">Gender*</p>
+                <select required name="gender" class="fillthebox" id="card">
+                    <option value="">Select Gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+                <br>
+                <div class="uandp">
+                    Basic Information
+                </div>
+                <p class="feilds">Permanent State*</p>
+                <input required name="perstate" class="fillthebox" type="text" placeholder="You're originally from">
+                <p class="feilds"> Current state* </p>
+                <input required name="corstate" class="fillthebox" type="text" placeholder="Currently living in">
+                <br>
+                <p class="feilds">Known Languages*</p>
+                <!-- <select class="fillthebox" name="card" id="card">
+                    <option value="">Select Languages</option>
+                    <option value="Visa">Hindi</option>
+                    <option value="Mastercard">Telugu</option>
+                    <option value="Visa">Tamil</option>
+                    <option value="Mastercard">Malyalam</option>
+                    <option value="Visa">Kannada</option>
+                    <option value="Mastercard">English</option>
+                </select> -->
+                <input required type="text" name="Languages" class="fillthebox" placeholder="Enter known languages">
+                <p class="feilds"> Department*</p>
+                <select required name="dept" class="fillthebox" id="dept">
+                    <option value="select dept"> Select Your Department</option>
+                    <option value="CSE">CSE</option>
+                    <option value="Civil">Civil</option>
+                    <option value="ECE">ECE</option>
+                    <option value="EEE">EEE</option>
+                    <option value="ICE">ICE</option>
+                    <option value="Mech">Mech</option>
+                    <option value="Chem">Chem</option>
+                    <option value="MME">MME</option>
+                    <option value="Prod">Prod</option>
+                    <option value="Archi">Archie</option>
+                </select>
+                <br>
+                <div class="uandp">
+                     Questionnaire
+                </div>
+                <p class="feilds">What are your Cleanliness Preferences?*</p>
+                <select required name="clean" class="fillthebox">
+                    <option value="select">Select</option>
+                    <option value="Mostly Tidy">Mostly Tidy</option>
+                    <option value="Somewhat Clean">Somewhat Clean</option>
+                    <option value="Messy">Messy</option>
+                </select>
+                <p class="feilds"> Would Your Friends Call You Quite or Loud?* </p>
+                <select required class="fillthebox" name="loud" id="">
+                    <option value="select">Select</option>
+                    <option value="Quite">Quite</option>
+                    <option value=" am not Sure">I am not Sure</option>
+                    <option value="Loud">Loud</option>
+                </select>
+                <br>
+                <p class="feilds"> Are you a Night Owl or an Early Bird?* </p>
+                <select required class="fillthebox" name="sleep" id="">
+                    <option value="select">Select</option>
+                    <option value="Early Bird">Early Bird</option>
+                    <option value="Normal Cycle">Normal Cycle</option>
+                    <option value="Night Owl">Night Owl</option>
+                </select>
+                <p class="feilds"> Are you OK Sleeping with Lights ON?* </p>
+                <select required class="fillthebox" name="lights" id="">
+                    <option value="Select">Select</option>
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+                <p class="feilds"> How often you might have friends coming over to your room?
+                    * </p>
+                <select required class="fillthebox" name="friend" id="">
+                    <option value="Select">Select</option>
+                    <option value="Often">Often</option>
+                    <option value="Sometimes">Sometimes</option>
+                    <option value="Rarely">Rarely</option>
+                </select>
+                <p class="feilds"> What are you mostly into?* </p>
+                <select required class="fillthebox" name="interests" id="">
+                    <option value="Select">Select</option>
+                    <option value="Academics">Academics</option>
+                    <option value="Sports">Sports</option>
+                    <option value="Coding">Coding</option>
+                    <option value="Extra-Curricular Activities">Extra-Curricular Activities</option>
+                </select>
+                <br>
+                <div class="uandp">
+                    Something you want to add
+                </div>
+                <p class="texttext">Write Anything Specific</p>
+                <textarea name="review" id="textarea" cols="30" rows="10">
+                </textarea>
+                <button class="nextbutton">
+                   <!-- <a class="butt" href="/formex1"></a> -->
+                   Save & Next
+                </button>
+            </form>
+        </div>
+    </div>
+    </div>
+</div>
+<script>
+ let navigation = document.querySelector(".nav");
+ let homeText = document.querySelector(".homebutton");
+ let AboutUsText=document.querySelector("#aboutscroll");
+ 
+ window.addEventListener("scroll",function(){
+    navigation.style.backgroundColor='#462054';
+    homeText.style.color='white';
+    AboutUsText.style.color='white';
+    if(window.scrollY===0){
+        navigation.style.backgroundColor='white';
+        homeText.style.color='black';
+    AboutUsText.style.color='black';
+    }
+ })
+//  let homebutton = document.querySelector("#homescroll");
+
+// let aboutus = document.querySelector("#aboutscroll");
+
+// let uppertexttwo = document.querySelector(".uppertexttwo");
+
+// homebutton.addEventListener("click", function(){
+//     uppertexttwo.classList.add("uppertexttwo-class");
+// });
+
+// aboutus.addEventListener("click", function(){
+//     uppertexttwo.classList.add("uppertexttwo-class");
+// });
+</script>
+</body>
+</html>

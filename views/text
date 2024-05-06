@@ -1,0 +1,33 @@
+.shivam{
+    width: 300px;
+    height: 400px;
+    /* float: right; */
+    margin-bottom: 20px;
+    margin-top: -150px;
+    margin-left: 100px;
+    margin-right: 30px;
+    border-radius: 50px;
+}
+.ayush{
+    width: 300px;
+    height: 400px;
+    /* float: right; */
+    margin-bottom: 20px;
+    margin-top: -150px;
+    margin-left: 50px;
+    margin-right: 30px;
+    border-radius: 50px;
+}
+.sanchit{
+    width: 350px;
+    height: 400px;
+    /* float: right; */
+    margin-bottom: 20px;
+    margin-top: -150px;
+    margin-left: 50px;
+    margin-right: 30px;
+    border-radius: 50px;
+}
+
+
+/* F5bGL48ur6zB3kMHNqegtp */

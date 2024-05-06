@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="icon" href="../images/favicon.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="../stylesheets/stylehomepage.css">
+</head>
+<body>
+    <div class="main">
+        <div class="nav">
+            <div class="logo">
+                <div>
+                    <a href="/"><img class="logp" src="../images/new logo.png" alt=""></a>
+            </div>
+            <!-- <div class="loginbutton" id="dbtn">
+                Dark Mode 
+             </div> -->
+            <!-- <div class="titlee">
+                FINDMYROMMIE
+            </div> -->
+            </div>
+            <div class="buttons">
+                <div class="options">
+                    <a class="homebutton" href="/">HOME</a></div>
+                <div class="options">
+                  <a class="aboutusbutton" href="/aboutus">  ABOUT US</a>
+                </div>
+                <a class="loglink" href="/open"><div class="loginbutton">
+                   LOGIN 
+                </div></a>
+            </div>
+        </div>
+        <div class="rest">
+            <div id="still">
+                STILL CONFUSED WHOM TO CHOOSE ?
+            </div>
+            <div class="rbut">
+               <a class="linkcolor" href="/registration"> <input id="rbutton" type="submit" value="REGISTER NOW"> </a>
+            </div>
+        </div>
+        <div class="boxes">
+            <div class="box">
+                <img class="connectimage" src="../images/connect.png" alt="">
+                <p class="dabbaonetext">CONNECTING WITH NEW PEOPLE</p>
+            </div>
+            <div class="box">
+                <img class="connectimage" src="../images/vibe2.png" alt="">
+                <p class="dabbatwotext">FIND SOMEONE WITH YOUR VIBE</p>
+            </div>
+            <div class="box">
+                <img class="connectimage" src="../images/safe.png" alt="">
+                <p class="dabbaonetext">SAFE AND VERIFIED</p>
+            </div>
+        </div>
+        <div class="counting">
+            <div class="number">
+                <div class="changingnumber">
+                    1
+                </div>
+                <div class="kuchtext">
+                    Registrations Till Now
+                </div>
+            </div>
+            <div class="stext">
+                Are you still searching for a roomie? Unsure if you might get along well? Say goodbye to the stress for this one– FindMyRoomie connects people who are seeking roommate, across your batch. Browse through profiles, listing interests to living habits. Find your match, connect effortlessly through our platform and get going now!
+            </div>
+        </div>
+        <!-- <div class="lastlines">
+            Welcome to FINDMYROMMIE, where finding the perfect cohabitant is made simple. Whether you're seeking a compatible roommate to share expenses, create lasting memories, or foster a supportive living environment, we've got you covered. Answer a few questions to help us understand your preferences, lifestyle, and needs, and we'll connect you with potential roommates who match your criteria. Begin your journey towards harmonious co-living today!
+        </div> -->
+        <div>
+            <hr class="hrcopy">
+        </div>
+        
+        <div class="footer">
+            <p id="copyright">©2024 FindMyRoomie</p> 
+            <p id="love">Made With ❤️ at NITT</p>
+        </div>        
+        
+
+    </div>
+    <!-- <script src="homepagejava.js"></script> -->
+    <script>
+        let body=document.querySelector("body");
+let navigation=document.querySelector(".nav");
+let homeButton=document.querySelector(".homebutton");
+let aboutUs=document.querySelector(".aboutusbutton");
+
+window.addEventListener("scroll", () => {
+    navigation.classList.add("scrollnav");
+    homeButton.classList.add("scrollhomebutton");
+    aboutUs.classList.add("scrollhomebutton");
+    if(window.scrollY===0){
+        navigation.classList.remove("scrollnav");
+    homeButton.classList.remove("scrollhomebutton");
+    aboutUs.classList.remove("scrollhomebutton");
+    }
+});
+
+
+let numbers=document.querySelector(".changingnumber");
+
+numbers.innerHTML=1;
+
+window.addEventListener("load", function () {
+    for(let i = 1;i<10;i++)
+    {
+        setTimeout(() => {
+            numbers.innerHTML=parseInt(numbers.innerHTML)+1+"+";
+        },i*100);
+    }
+});
+
+
+let bodyy=document.querySelector("body");
+let darkButton = document.querySelector("#dbtn");
+
+bodyy.addEventListener("click", () => {
+    if(darkButton.innerHTML==="Dark Mode")
+    {
+    bodyy.classList.add("dark-background");
+    darkButton.innerHTML="Light Mode";
+}
+else if (darkButton.innerHTML=="Light Mode")
+{
+    bodyy.classList.remove("dark-background");
+    darkButton.innerHTML="Dark Mode";
+}
+
+})
+
+// window.addEventListener("scroll", () => {
+
+//     let num=window.scrollY;
+//     numbers.innerHTML=Math.floor(((num/100)+3)) +"+";
+// });
+    </script>
+</body>
+</html>

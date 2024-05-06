@@ -1,0 +1,136 @@
+body{
+    margin: 0;
+    margin-bottom: 20px;
+}
+.main{
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+    margin: 0px;
+    padding: 0px;
+}
+.nav{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-gap: 650px;
+    background-color: white;
+    height: 100px;
+    border-radius: 5px;
+}
+.buttons{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 25px;
+    width: 200px;
+    grid-gap: 10px;
+}
+.options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 50px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif;
+    text-decoration: none; 
+    transition: text-decoration 1s ease;
+}
+.options:hover{
+    cursor: pointer;
+    text-decoration: underline; 
+     
+}
+.logo{
+    display: grid;
+    padding: 25px;
+    grid-template-columns: 1fr 1fr;
+    height: 100px;
+    justify-content: center;
+
+}
+.logp{
+    display: flex;
+    width: 200px;
+    margin-left: 50px;
+    margin-top: -15px;
+    border-radius: 50px;
+}
+.titlee{
+    padding: 5px;
+    font-size: xx-large;
+    color: red;
+    font-weight: bold;
+}
+.nav{
+    position: sticky;
+    top: 0;
+}
+.loginbutton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 50px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif;
+    background-color: #ffe26f;
+    border-radius: 4px;
+    color: black;
+    border: 1px solid black ;
+}
+.loginbutton:hover{
+    cursor: pointer;
+}
+.loglink{
+    color: black;
+    text-decoration: none;
+}
+.homebutton{
+    color: black;
+    text-decoration: none;
+}
+.aboutus{
+    font-size: 40px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif;
+    font-weight: 600;
+    color: rgb(60, 89, 79);
+
+}
+.firstbox{
+    margin: 70px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 30px;
+    /* border: 1px solid black; */
+}
+.firstbox > img{
+    width: 300px;
+    height: 300px;
+    float: right;
+    margin-bottom: 20px;
+    margin-top: -80px;
+    margin-right: 30px;
+    border-radius: 50px;
+}
+.maintext{
+    margin: 15px;
+    font-size: 20px;
+    text-align: center;
+}
+.developerdetails{
+    margin: 70px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 30px;
+}
+#line{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.credit{
+    font-size: large;
+    font-weight: 400;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif;
+    text-align: center;
+}
+.footer{
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif;
+    text-align: center;
+}

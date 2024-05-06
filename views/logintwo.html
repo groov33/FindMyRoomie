@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="icon" href="../images/favicon.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="loginstyle.css">
+</head>
+<body>
+    <div class="nav">
+        <div class="logo">
+            <div>
+            <img class="logp" src="cropped no bg.png" alt="">
+        </div>
+        <!-- <div class="titlee">
+            FINDMYROMMIE
+        </div> -->
+        </div>
+        <div class="buttons">
+            <div class="options">
+                <a class="homebutton" href="homepage.html">HOME</a></div>
+            <div class="options">
+                ABOUT US
+            </div>
+            <div class="loginbuttonnav">
+              <a class="loglink" href="login.html"> LOGIN </a>
+            </div>
+        </div>
+    </div>
+    <div class="bigbox">
+        <form class="loginform" action="">
+            <p class="titlee">LOGIN</p>
+            <p><input class="askemail" type="email" placeholder="EMAIL ID"></p>
+            <p><input class="askemail" type="password" placeholder="PASSWORD"></p>
+            <p>
+                <!-- <input class="loginbutton" type="submit" value="Login" onclick="openPopup()"> -->
+                <button class="loginbutton" id="inbutton" name="loginkeliye">
+                    Login
+                </button>
+            </p>
+            <p>
+                Don't have an account? <a class="lasttext" href="homepage.html">Register</a>
+            </p>
+        </form>
+    </div>
+    <div class="popup shivam"  id="popupkro">
+        <img src="logintick.png" alt="">
+        <h2>THANK YOU</h2>
+        <p>
+            You are Successfully Logged In 
+            <br>
+            You can go to the Dashboard.
+        </p>
+        <button class="dashboard" id="dashboardbutton" name="dashkeliye">
+            <a href="homepage.html">Dashboard</a></button>
+    </div>   
+    <script src="loginjs.js"></script>
+</body>
+</html>

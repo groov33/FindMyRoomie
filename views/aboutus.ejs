@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="icon" href="../images/favicon.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about us</title>
+    <!-- <link rel="stylesheet" href="aboutus.css"> -->
+    <style>
+         body{
+    margin: 0;
+    margin-bottom: 20px;
+}
+.main{
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+    margin: 0px;
+    padding: 0px;
+}
+.nav{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-gap: 780px;
+    background-color: white;
+    height: 100px;
+    border-radius: 5px;
+}
+.buttons{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 25px;
+    width: 200px;
+    grid-gap: 10px;
+}
+.options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 50px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif;
+    text-decoration: none; 
+    transition: text-decoration 1s ease;
+}
+.options:hover{
+    cursor: pointer;
+    text-decoration: underline; 
+     
+}
+.logo{
+    display: grid;
+    padding: 25px;
+    grid-template-columns: 1fr 1fr;
+    height: 100px;
+    justify-content: center;
+
+}
+.logp{
+    display: flex;
+    width: 200px;
+    margin-left: 50px;
+    margin-top: -15px;
+    border-radius: 50px;
+}
+.titlee{
+    padding: 5px;
+    font-size: xx-large;
+    color: red;
+    font-weight: bold;
+}
+.nav{
+    position: sticky;
+    top: 0;
+}
+.grid_container{
+    display: grid;
+    grid-template-columns:250px 250px 250px ;
+    grid-template-rows: 310px 50px;
+    grid-gap: 50px;
+   margin-left: 200px;
+   padding: 20px;
+}
+.grid_container div img{
+    /* display: grid;
+    grid-template-columns: 250px 250px 250px;
+    grid-gap: 20px; */
+    width: 250px;
+    height: 300px;
+    border: solid 2px;
+}
+.loginbutton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 50px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif;
+    background-color: #ffe26f;
+    border-radius: 4px;
+    color: black;
+    border: 1px solid black ;
+}
+.loginbutton:hover{
+    cursor: pointer;
+}
+.loglink{
+    color: black;
+    text-decoration: none;
+}
+.homebutton{
+    color: black;
+    text-decoration: none;
+}
+.aboutus{
+    font-size: 40px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif;
+    font-weight: 600;
+    color: rgb(60, 89, 79);
+
+}
+.firstbox{
+    margin: 70px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 150px;
+    /* border: 1px solid black; */
+}
+.firstbox > img{
+    width: 300px;
+    height: 300px;
+    float: right;
+    margin-bottom: 20px;
+    margin-top: -80px;
+    /* margin-right:-50px; */
+    border-radius: 50px;
+    padding-left: 70px;
+}
+.maintext{
+    /* margin: 15px; */
+    font-size: 20px;
+    margin-right: 50px;
+    /* text-align: center; */
+}
+.developerdetails{
+    margin: 70px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 30px;
+}
+#line{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.credit{
+    font-size: large;
+    font-weight: 400;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif;
+    text-align: center;
+    color: #462054;
+}
+.footer{
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif;
+    text-align: center;
+}
+.shivam{
+    width: 300px;
+    height: 400px;
+    /* float: right; */
+    margin-bottom: 20px;
+    margin-top: -150px;
+    margin-left: 100px;
+    margin-right: 30px;
+    border-radius: 50px;
+}
+.ayush{
+    width: 300px;
+    height: 400px;
+    /* float: right; */
+    margin-bottom: 20px;
+    margin-top: -150px;
+    margin-left: 50px;
+    margin-right: 30px;
+    border-radius: 50px;
+}
+.sanchit{
+    width: 350px;
+    height: 400px;
+    /* float: right; */
+    margin-bottom: 20px;
+    margin-top: -150px;
+    margin-left: 50px;
+    margin-right: 30px;
+    border-radius: 50px;
+}
+/* @media screen and (max-width:426px) and (min-width:320px){
+    .bigbox{
+        margin-left: 200px;
+    }
+    .buttons{
+        width: fit-content;
+    }
+} */
+/* .nav {
+  grid-template-columns: 1fr 4fr;
+  grid-gap: 10%; Adjust as needed for spacing on mobile
+} */
+/* @media screen and (max-width: 426px) and (min-width: 320px) {
+  .buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%; /* Take full width on mobile */
+    /* margin-right: 100px; */
+/* .firstbox > img {
+  width: 80%; /* Adjust as needed for proper fit */
+  /* float: inline-end; */ 
+
+    /* text-align: justify;
+    width: 500px;
+}
+.logo{
+    margin-left: -40px;
+}
+.credit,
+.footer{
+    margin-left: 170px;
+    width: 500px;
+}
+#line{
+    width: 100%;
+    margin-left: 220px;
+} */
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="nav">
+            <div class="logo">
+                <div>
+               <a href="/"> <img class="logp" src="../images/new logo.png" alt=""></a>
+            </div>
+            <!-- <div class="titlee">
+                FINDMYROMMIE
+            </div> -->
+            </div>
+            <div class="buttons">
+                <div class="options">
+                    <a class="homebutton" href="/">HOME</a></div>
+                <div class="options">
+                   <a class="homebutton" href="/aboutus"> ABOUT US</a>
+                </div>
+                <div class="loginbutton">
+                  <a class="loglink" href="/open"> LOGIN </a>
+                </div>
+            </div>
+        </div>
+        <div class="firstbox">
+            <!-- <p class="aboutus">About Us</p> -->
+            <div class="image-container">
+            <img class="shivam" src="../images/shivam.jpg" alt="">
+            <img class="sanchit" src="../images/sanchit.jpg" alt="">
+            <img class="ayush" src="../images/ayush.jpg" alt="">
+        </div>
+           <!-- <p class="maintext"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam culpa quo doloremque iure obcaecati ratione maiores at repellat debitis architecto unde eligendi, praesentium ipsam voluptatum placeat laborum qui cum eos distinctio. Et, voluptas aut non ratione numquam repellat, illum esse quis ipsum similique dolorum rerum, consectetur cupiditate iste enim delectus.
+            <br> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga voluptatem, sequi, consectetur labore minima necessitatibus inventore iusto placeat itaque reprehenderit aliquid blanditiis sapiente excepturi odio.</p> -->
+        </div>
+        </div>
+        <hr id="line">
+        <p class="credit">
+            Made With ❤️ by Shivam, Sanchit and Ayush
+        </p>
+        <div class="footer">
+            Copyright © 2024 FINDMYROOMIE.
+        </div>
+</body>
+</html>

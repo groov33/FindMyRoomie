@@ -1,0 +1,120 @@
+body{
+    margin: 0;
+    margin-bottom: 20px;
+}
+.main{
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+    margin: 0px;
+    padding: 0px;
+}
+.text{
+    font-size: x-large;
+}
+.nav{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 770px;
+    background-color: white;
+    height: 100px;
+    border-radius: 5px;
+}
+.buttons{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 25px;
+    width: 200px;
+    grid-gap: 10px;
+}
+.options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 50px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif;
+    text-decoration: none; 
+    transition: text-decoration 1s ease;
+}
+.options:hover{
+    cursor: pointer;
+    text-decoration: underline; 
+     
+}
+.logo{
+    display: grid;
+    padding: 25px;
+    grid-template-columns: 1fr 1fr;
+    height: 100px;
+    justify-content: center;
+
+}
+.logp{
+    display: flex;
+    width: 200px;
+    margin-left: 50px;
+    margin-top: -15px;
+    border-radius: 50px;
+}
+.titlee{
+    padding: 5px;
+    font-size: xx-large;
+    color: red;
+    font-weight: bold;
+}
+.nav{
+    position: sticky;
+    top: 0;
+}
+.loginbutton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 50px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif;
+    background-color: #ffe26f;
+    border-radius: 4px;
+    color: black;
+    border: 1px solid black ;
+}
+.loginbutton:hover{
+    cursor: pointer;
+}
+.loglink{
+    color: black;
+    text-decoration: none;
+}
+.homebutton{
+    color: black;
+    text-decoration: none;
+}
+.aboutus{
+    font-size: 40px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif;
+    font-weight: 600;
+    color: rgb(60, 89, 79);
+
+}
+.aboutusbutton{
+    color: black;
+    text-decoration: none;
+}
+.text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -10px;
+    height: fit-content;
+
+}
+.logmsg{
+    text-align: center;
+    color: black;
+}
+.waitimg{
+    width: 550px;
+    height: 500px;
+    margin: 0;
+    padding: 0;
+}

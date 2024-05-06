@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="icon" href="../images/favicon.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>regisster page</title>
+    <!-- <link rel="stylesheet" href="restext.css"> -->
+    <style>
+        body{
+    margin: 0;
+    margin-bottom: 20px;
+}
+.main{
+    display: grid;
+    grid-template-rows: 1fr 1fr 4fr;
+    margin: 0px;
+    padding: 0px;
+}
+.nav{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-gap: 650px;
+    background-color: white;
+    height: 100px;
+    /* border-radius: 5px; */
+    transition: background-color 1s;
+}
+.scrollnav{
+    background-color: #462054;
+}
+.buttons{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 25px;
+    width: 200px;
+    grid-gap: 10px;
+}
+.fillthecheck{
+    margin-left: 80px;
+    width: 20px;
+}
+.kannada{
+    margin-left: 72px;
+}
+.options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 50px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif;
+    text-decoration: none; 
+    transition: text-decoration 1s ease;
+}
+.options:hover{
+    cursor: pointer;
+    text-decoration: underline; 
+     
+}
+.logo{
+    display: grid;
+    padding: 25px;
+    grid-template-columns: 1fr 1fr;
+    height: 100px;
+    justify-content: center;
+
+}
+.logp{
+    display: flex;
+    width: 200px;
+    margin-left: 50px;
+    margin-top: -15px;
+    border-radius: 50px;
+}
+.otherlink{
+    color: black;
+    text-decoration: none;
+}
+.titlee{
+    padding: 5px;
+    font-size: xx-large;
+    color: red;
+    font-weight: bold;
+}
+.nav{
+    position: sticky;
+    top: 0;
+}
+.loginbutton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 50px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif;
+    background-color: #ffe26f;
+    border-radius: 4px;
+    color: black;
+    border: 1px solid black ;
+}
+.loginbutton:hover{
+    cursor: pointer;
+}
+.loglink{
+    color: white;
+    text-decoration: none;
+}
+.homebutton,
+.aboutusbutton{
+    color: black;
+    text-decoration: none;
+}
+.midbigbox{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 360px;
+    margin-right: 360px;
+    margin-top: -90px;
+    /* grid-gap: 10px; */
+}
+.sidebutton{
+    color: black;
+    text-decoration: none;
+}
+.smallboxone{
+    display: grid;
+    grid-row: 1fr 1fr 1fr 1fr 1fr;
+    width: 230px;
+    height: 300px;
+    border: 2px solid rgb(232, 223, 223);
+    box-shadow: 5px 5px rgb(232, 223, 223);
+    border-radius: 15px;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 4px;
+    justify-content: center;
+    margin-top: 70px;
+}
+.bullets{
+    display: flex;
+    background-color: #D4BBDD;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    width: 190px;
+    border-radius: 50px;
+}
+.bullets:hover{
+    cursor: pointer;
+    background-color: #e4d0eb;
+}
+.texttext{
+    font-size: large;
+    text-align: center;
+}
+.smallboxtwo{
+    display: grid;
+    grid-template-rows: 1fr fr;
+    width: 500px;
+    height: 400px;
+    border-radius: 15px;
+    border: 2px solid rgb(232, 223, 223);
+    box-shadow: 5px 5px rgb(232, 223, 223);
+    margin-top: 70px;
+}
+.uandp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif;
+    font-weight: 500;
+    font-size: 1.25rem;
+    color: rgb(75 85 99);
+    /* margin-top: 30px; */
+}
+#textarea{
+    width: 400px;
+    margin-left: 50px;
+}
+.feilds{
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif;
+    color: rgb(75 85 99);
+    font-size: 20px;
+    font-weight: 300;
+    margin-left: 80px;
+}
+.uppertext{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif;
+    font-weight: 500;
+    margin-top: -40px;
+    color: rgb(75 85 99);
+}
+.fillthebox{
+    width: 230px;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid #bfafc4;
+    margin-left: 80px;
+}
+.fillthebox:hover{
+    border: 1px solid rgb(59, 59, 225);
+}
+.nextbutton{
+    margin: 25px;
+    width: 130px;
+    height: 35px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    background-color: rgb(75, 210, 75);
+    border: 1px solid #bfafc4;
+    border-radius: 5px;
+    margin-left: 190px;
+}
+.nextbutton:hover{
+    cursor: pointer;
+    background-color: rgb(104, 223, 104);
+}
+.butt{
+    color: white;
+    text-decoration: none;
+}
+/* .hrcopy{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 0px;
+    height: ;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+} */
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="nav">
+            <div class="logo">
+                <div>
+                    <a href="/homepage"><img class="logp" src="../images/new logo.png" alt=""></a>
+            </div>
+            <!-- <div class="titlee">
+                FINDMYROMMIE
+            </div> -->
+            </div>
+            <div class="buttons">
+                <div class="options">
+                    <a class="homebutton" href="/homepage">HOME</a></div>
+                <div class="options">
+                  <a class="aboutusbutton" href="/aboutus">  ABOUT US</a>
+                </div>
+                <a class="loglink" href="/logout"><div class="loginbutton">
+                   LOGOUT
+                </div></a>
+            </div>
+        </div>
+    <div class="uppertext">
+        Registration Form
+    </div>
+    <div class="midbigbox">
+        <div class="smallboxone">
+            <a class="otherlink" href="registerpage.html"><div class="bullets">
+                Personal Details
+            </div></a>
+            <a class="otherlink" href="registerpage2.html"> <div class="bullets">
+                Basic Information
+            </div></a>
+            <a class="homebutton" href="registrationpage3.html"><div class="bullets">
+                What You Are?
+            </div></a>
+            <!-- <div class="bullets">
+                What You Want?
+            </div> -->
+            <div class="bullets">
+                Text Area
+            </div>
+        </div>
+        <div class="smallboxtwo">
+            <div class="uandp">
+                Fill the Following Questionarrie
+            </div>
+            <form class="firstpage" action="">
+                <p class="texttext">Write Anything Specific</p>
+                <textarea name="review" id="textarea" cols="30" rows="10">
+                </textarea>
+                <button class="nextbutton" type="submit">
+                   <a class="butt" href="registerpage3.html">Save & Next</a>
+                </button>
+            </form>
+        </div>
+    </div>
+    </div>
+    <!-- <div class="footer">
+        Copyright © 2024 FINDMYROMMIE All rights reserved.
+    </div> -->
+</div>
+</body>
+</html>
